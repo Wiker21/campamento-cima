@@ -13,9 +13,11 @@ export function LoginPage({ login }) {
     <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px' }} className="animate-fade-in">
       <div className="glass-panel" style={{ width: '100%', maxWidth: '480px', padding: '40px', textAlign: 'center', background: 'var(--bg-card)' }}>
         
-        <div style={{ background: 'linear-gradient(135deg, var(--primary), var(--secondary))', width: '64px', height: '64px', borderRadius: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', margin: '0 auto 24px', boxShadow: '0 8px 25px var(--primary-glow)' }}>
-          <Mountain size={32} />
-        </div>
+        <img 
+          src="/Logo Campa.png" 
+          alt="Logo Campamento Cima" 
+          style={{ height: '84px', width: 'auto', margin: '0 auto 20px', display: 'block' }} 
+        />
 
         <h2 style={{ fontSize: '1.8rem', marginBottom: '8px' }}>Acceso Organización</h2>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '32px' }}>

@@ -46,7 +46,7 @@ export function LandingPage({ addKid }) {
         alignItems: 'center', 
         justifyContent: 'center', 
         padding: '40px 24px',
-        background: 'radial-gradient(circle at 50% 30%, hsla(152, 68%, 28%, 0.15) 0%, transparent 70%)',
+        background: 'radial-gradient(circle at 50% 30%, hsla(242, 78%, 38%, 0.15) 0%, transparent 70%)',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '900px', zIndex: 10 }}>

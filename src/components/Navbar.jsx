@@ -37,18 +37,11 @@ export function Navbar({ currentUser, logout }) {
           to={currentUser ? "/panel" : "/inicio"}
           style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}
         >
-          <div style={{ 
-            background: 'linear-gradient(135deg, var(--primary), var(--secondary))', 
-            padding: '8px', 
-            borderRadius: '12px',
-            color: 'white',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 4px 12px var(--primary-glow)'
-          }}>
-            <Mountain size={24} />
-          </div>
+          <img 
+            src="/Logo Campa.png" 
+            alt="Logo Campamento Cima" 
+            style={{ height: '46px', width: 'auto', objectFit: 'contain' }} 
+          />
           <div>
             <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em', background: 'linear-gradient(135deg, var(--text-main), var(--primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               CAMPAMENTO CIMA
