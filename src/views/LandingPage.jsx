@@ -45,32 +45,69 @@ export function LandingPage({ addKid }) {
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center', 
-        padding: '60px 24px',
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)), url("/portada.jpg")',
+        padding: '80px 24px',
+        backgroundImage: 'linear-gradient(135deg, rgba(16, 17, 45, 0.5) 0%, rgba(10, 12, 32, 0.72) 100%), url("/portada.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: 'center'
       }}>
-        <div style={{ maxWidth: '900px', zIndex: 10 }}>
-          <h1 style={{ 
-            fontSize: 'clamp(3.5rem, 8vw, 6.5rem)', 
-            fontWeight: 900, 
-            letterSpacing: '-0.04em', 
-            lineHeight: 1.05,
-            color: '#ffffff',
-            textShadow: '0 4px 24px rgba(0,0,0,0.5)',
-            marginBottom: '32px',
-            fontFamily: 'var(--font-heading)'
-          }}>
-            Campamento Cima
-          </h1>
+        <div style={{ maxWidth: '1000px', zIndex: 10 }}>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', marginBottom: '44px' }}>
+            <span style={{ 
+              fontSize: 'clamp(0.9rem, 2vw, 1.3rem)', 
+              textTransform: 'uppercase', 
+              letterSpacing: '0.35em', 
+              fontWeight: 800,
+              color: '#fbbf24',
+              textShadow: '0 2px 15px rgba(251, 191, 36, 0.6)'
+            }}>
+              ✨ Verano Oficial 2026 ✨
+            </span>
+
+            <h1 style={{ 
+              fontSize: 'clamp(4rem, 11vw, 8.5rem)', 
+              fontWeight: 900, 
+              letterSpacing: '-0.03em', 
+              lineHeight: 0.95,
+              color: '#ffffff',
+              textShadow: '0 12px 45px rgba(0,0,0,0.85)',
+              margin: 0,
+              fontFamily: 'var(--font-heading)'
+            }}>
+              CAMPAMENTO <br />
+              <span style={{ 
+                background: 'linear-gradient(135deg, #ffffff 10%, #93c5fd 55%, #3b82f6 100%)', 
+                WebkitBackgroundClip: 'text', 
+                WebkitTextFillColor: 'transparent',
+                filter: 'drop-shadow(0 4px 25px rgba(59, 130, 246, 0.6))'
+              }}>
+                CIMA
+              </span>
+            </h1>
+          </div>
 
           <button 
             onClick={() => setInscrModalOpen(true)}
-            className="btn-accent"
-            style={{ padding: '16px 40px', fontSize: '1.15rem', fontWeight: 700, boxShadow: '0 8px 30px rgba(0,0,0,0.3)' }}
+            style={{ 
+              padding: '18px 48px', 
+              fontSize: '1.2rem', 
+              fontWeight: 800, 
+              borderRadius: '99px',
+              background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+              color: '#ffffff',
+              border: '2px solid rgba(255,255,255,0.35)',
+              boxShadow: '0 12px 40px rgba(245, 158, 11, 0.5)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
           >
-            Pre-inscripción Online <ArrowRight size={20} />
+            <Sparkles size={22} /> Pre-inscripción Online <ArrowRight size={22} />
           </button>
         </div>
       </section>
