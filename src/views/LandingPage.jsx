@@ -41,12 +41,14 @@ export function LandingPage({ addKid }) {
       {/* Hero Section */}
       <section style={{ 
         position: 'relative', 
-        minHeight: '85vh', 
+        minHeight: '88vh', 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center', 
-        padding: '40px 24px',
-        background: 'radial-gradient(circle at 50% 30%, hsla(242, 78%, 38%, 0.15) 0%, transparent 70%)',
+        padding: '60px 24px',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.93)), url("/portada.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '900px', zIndex: 10 }}>

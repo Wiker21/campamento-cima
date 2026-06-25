@@ -42,7 +42,7 @@ function MainContent() {
         logout={logout}
       />
       
-      <main style={{ flex: 1, padding: '0 8px' }}>
+      <main style={{ flex: 1 }}>
         <Routes>
           {/* Rutas Públicas e Inicio */}
           <Route path="/inicio" element={<LandingPage addKid={addKid} />} />

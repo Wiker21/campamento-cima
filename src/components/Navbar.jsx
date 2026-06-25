@@ -23,13 +23,16 @@ export function Navbar({ currentUser, logout }) {
   const isPrivateView = ['/panel', '/ninos', '/grupos', '/habitaciones', '/bitacora'].includes(currentPath);
 
   return (
-    <header className="glass-panel" style={{ 
+    <header style={{ 
       position: 'sticky', 
-      top: '16px', 
+      top: 0, 
+      left: 0,
       zIndex: 1000, 
-      margin: '16px 24px',
-      padding: '12px 24px',
-      borderRadius: '20px'
+      width: '100%',
+      background: 'var(--bg-main)',
+      borderBottom: '1px solid var(--border-color)',
+      padding: '12px 32px',
+      boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)'
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Brand */}
