@@ -46,74 +46,32 @@ export function LandingPage({ addKid }) {
         alignItems: 'center', 
         justifyContent: 'center', 
         padding: '60px 24px',
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.93)), url("/portada.jpg")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)), url("/portada.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '900px', zIndex: 10 }}>
-          
-          <div className="animate-float" style={{ display: 'inline-flex', marginBottom: '24px' }}>
-            <span className="badge badge-accent" style={{ padding: '8px 18px', fontSize: '0.85rem', boxShadow: '0 4px 20px rgba(245, 158, 11, 0.2)' }}>
-              <Sparkles size={16} /> CAMPAMENTO DE VERANO OFICIAL 2026
-            </span>
-          </div>
-
           <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', 
-            fontWeight: 800, 
-            letterSpacing: '-0.03em', 
-            lineHeight: 1.1,
-            marginBottom: '24px',
-            background: 'linear-gradient(135deg, var(--text-main) 30%, var(--primary-light))',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
+            fontSize: 'clamp(3.5rem, 8vw, 6.5rem)', 
+            fontWeight: 900, 
+            letterSpacing: '-0.04em', 
+            lineHeight: 1.05,
+            color: '#ffffff',
+            textShadow: '0 4px 24px rgba(0,0,0,0.5)',
+            marginBottom: '32px',
+            fontFamily: 'var(--font-heading)'
           }}>
-            Llegando a la Cima de la Aventura y el Compañerismo
+            Campamento Cima
           </h1>
 
-          <p style={{ 
-            fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', 
-            color: 'var(--text-muted)', 
-            maxWidth: '720px', 
-            margin: '0 auto 40px',
-            lineHeight: 1.6 
-          }}>
-            Organización integral de experiencias en la naturaleza. Deporte, valores y diversión en un entorno seguro bajo la supervisión de monitores titulados.
-          </p>
-
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button 
-              onClick={() => setInscrModalOpen(true)}
-              className="btn-accent"
-              style={{ padding: '16px 36px', fontSize: '1.1rem' }}
-            >
-              Pre-inscripción Pública <ArrowRight size={20} />
-            </button>
-            <button 
-              onClick={() => navigate('/acceso')}
-              className="btn-primary"
-              style={{ padding: '16px 36px', fontSize: '1.1rem' }}
-            >
-              Acceso Monitores / Organización
-            </button>
-          </div>
-
-          {/* Key metrics */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '20px', marginTop: '70px', padding: '24px', background: 'var(--bg-card)', borderRadius: '20px', border: '1px solid var(--border-color)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-            <div>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--primary)' }}>+300</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>Niños Felices cada año</div>
-            </div>
-            <div>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--secondary)' }}>100%</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>Entorno Seguro y Vigilado</div>
-            </div>
-            <div>
-              <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent)' }}>15 Días</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>De Inmersión y Valores</div>
-            </div>
-          </div>
+          <button 
+            onClick={() => setInscrModalOpen(true)}
+            className="btn-accent"
+            style={{ padding: '16px 40px', fontSize: '1.15rem', fontWeight: 700, boxShadow: '0 8px 30px rgba(0,0,0,0.3)' }}
+          >
+            Pre-inscripción Online <ArrowRight size={20} />
+          </button>
         </div>
       </section>
 
